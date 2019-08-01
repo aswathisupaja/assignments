@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<style type="text/css">
+		#form{
+			background-color: #00ffff;
+			width: 500px;
+
+		}
+		*{
+			margin-left: 20px;
+		}
+		#lbl_gender1{
+			color: red;
+		}
+		
+
+	</style>
+	<script type="text/javascript">
+		function validate() {
+			flag=0;
+			 if (form.radio_gender[0].checked == false && form.radio_gender[1].checked == false) 
+			 {
+			 	document.getElementById("lbl_gender1").innerHTML="please select the gender";
+			 	
+			 	flag++;
+			 }
+			 else
+			 {
+			 	document.getElementById("lbl_gender").innerHTML=" ";
+			 	return true;
+			 }
+			 if(flag>0)
+			 {
+			 	return false;
+			 }
+
+		}
+	</script>
+</head>
+<body>
+	<form id="form" onsubmit="return validate()">
+     	<table>
+     		<tr><h3 align="center">Radio Button Validation</h3></tr>
+     		<tr>
+			<td>Gender</td>
+			<td><label id="lbl_gender"><input type="radio" name="radio_gender">male
+			           <input type="radio" name="radio_gender" >female</td>
+			    </label>
+			    <td><label id="lbl_gender1"></label></td>
+		</tr>
+		 <tr>
+        	<td colspan="2"><input type="submit" id="but" name="" value="SUBMIT"  align="center"></td>
+        </tr>
+
+		
+     	</table>
+     </form>
+
+
+</body>
+</html>

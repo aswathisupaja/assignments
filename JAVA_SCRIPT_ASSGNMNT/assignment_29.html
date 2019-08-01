@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+<script type="text/javascript">
+	function check() {
+		
+
+		Uname=document.getElementById('txt_name').value;
+		pass=document.getElementById('pwd').value;
+		if (Uname == "admin" && pass == "admin123") 
+		{
+          document.write("Login successfully");
+		}
+		// body...
+	}
+</script>
+
+</head>
+<body>
+   <form action="" method="get">
+     
+UserName : <input type="txet" id="txt_name" name=""> Password : <input type="Password" id="pwd" name="">  
+<input type="button" value="Login" name="" onclick="check();">
+   </form>
+</body>
+</html>

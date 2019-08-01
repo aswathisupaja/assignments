@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<script type="text/javascript">
+		var mark_arun=new Array(96,83,50);
+		var mark_midhun=new Array(99,93,50);
+
+         
+         total_mark_arun=mark_arun[0]+mark_arun[1]+mark_arun[2];
+
+         document.write("marks for: arun is:"+mark_arun[0]+","+mark_arun[1]+","+mark_arun[2]+"<br>");
+         document.write("total is:"+total_mark_arun+"<br>");
+
+
+        
+
+         total_mark_midhun=mark_midhun[0]+mark_midhun[1]+mark_midhun[2];
+
+         document.write("marks for: midhun is:"+mark_midhun[0]+","+mark_midhun[1]+","+mark_midhun[2]+"<br>");
+         document.write("total is:"+total_mark_midhun);
+
+          var diff=total_mark_midhun - total_mark_arun;
+
+         if(total_mark_arun < total_mark_midhun)
+         {
+         
+          alert("midhun get"+" "+diff+" "+"marks than arun");
+
+         }
+
+	</script>
+</head>
+<body>
+
+</body>
+</html>

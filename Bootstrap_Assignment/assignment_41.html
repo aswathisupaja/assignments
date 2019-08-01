@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+     <mata charset="utf-8">
+     <meta name="viewport" content="width=device-width,initial-scale=1">
+     <link rel="stylesheet" type="text/css" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+     <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+     <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+     <script type="text/javascript">
+       $(document).ready(function(){
+        $('#showModal').click(function(){
+          $('#loginModal').modal('show');
+        });
+        $('#hideModal').click(function(){
+          $('#loginModal').modal('hide');
+        });
+
+
+       });
+     </script>
+    
+</head>
+<body>
+	<br/><br/>
+   <div class="container">
+   	<div class="row">
+   		<div class="col-xs-12">
+   			<button class="btn btn-primary" id="showModal">Login</button>
+   			<div class="modal" id="loginModal" tabindex="-1" data-keyboard="false" data-backdrop="static">
+   				<div class="modal-dialog">
+   					<div class="modal-content">
+   						<div class="modal-header">
+   							<button class="close" data-dismiss="modal">&times;</button>
+   							<h4 class="modal-tittle">Login</h4>
+   						</div>
+   						<div class="modal-body">
+   							<form>
+   								<div class="form-group">
+   									<label>Username</label>
+   									<input type="text" name="" class="form-control" placeholder="Login Username">
+   								</div>
+   								<div>
+   									<label>Password</label>
+   									<input type="password" name="" class="form-control" placeholder="Login Password">
+   								</div>
+   							</form>
+   						</div>
+   						<div class="modal-footer">
+   							<button class="btn btn-primary">Login</button>
+   							<button class="btn btn-primary" data-dismiss="modal" id="hideModal">Close</button>
+   						</div>
+   					</div>
+   				</div>
+   			</div>
+   		</div>
+   	</div>
+   	
+   </div>
+</body>

@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<mata charset="utf-8">
+     <meta name="viewport" content="width=device-width,initial-scale=1">
+     <link rel="stylesheet" type="text/css" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+     <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+     <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+     <script type="text/javascript">
+     	$(document).ready(function(){
+     		$('#btn_submit').click(function(){
+     			$("#alert_first").show();
+     			$('#alert_second').show();
+     			$('#alert_third').show();
+     			$('#alert_fourth').show();
+     		});
+
+     	});
+     </script>
+</head>
+<body>
+ <div class="container">
+ 	<div class="row">
+ 		<div class="col-xs-12">
+ 			<br/><br/>
+ 			<button id="btn_submit" class="btn btn-primary">Submit</button>
+
+ 	        <br/><br/>
+ 
+
+ 			<div class="alert alert-danger collapse" id="alert_first">
+ 				<strong>ERROR!</strong>
+ 			</div><br/>
+ 			<div class="alert alert-success collapse" id="alert_second">
+ 				<strong>ERROR!</strong>
+ 			</div>
+            <div class="alert alert-warning collapse" id="alert_third">
+            	<strong>ERROR!<strong>
+            </div>
+            <div class="alert alert-info collapse" id="alert_fourth">
+            	<strong>ERROR!</strong>
+            </div>
+
+
+ 		</div>
+ 	</div>
+ </div>
+</body>
+</html>

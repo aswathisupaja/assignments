@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+
+	<script type="text/javascript">
+		var image_tracker="p1";
+		function change() 
+		{
+			var image=document.getElementById("img");
+			if (image_tracker=='p1')
+			 {
+			 	image.src="../images/pic_2.png";
+			 	image_tracker="p2";
+			 }
+			 else
+			 {
+			 	image.src="../images/pic_1.png";
+			 	image_tracker="p1";
+			 }
+		
+		}
+
+		setTimeout('change()',2000); 
+
+
+	</script>
+</head>
+<body>
+   <img src="pic_1.png" alt="images" onclick="change();" id="img">
+
+</body>
+</html>

@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+
+	<script type="text/javascript">
+		function validate_form()
+		{
+
+			var name=document.getElementById('txt_name').value;
+			var Personal_address=document.getElementById('txt_address').value;
+			var email=document.getElementById('txt_email').value;
+			var mobile=document.getElementById('txt_mobile').value;
+			var password=document.getElementById('txt_pwd').value;
+			var confirm=document.getElementById('txt_cpwd').value;
+
+             
+         if (name =="" ) 
+         {
+          document.getElementById('lb1').innerHTML="Enter your Name";
+          
+
+         }
+         else
+         {
+         document.getElementById("lb1").innerHTML=" ";
+         return true;
+         }
+         if (Personal_address =="" ) 
+         {
+          document.getElementById("lb2").innerHTML="Enter your Personal Address";
+          
+
+         }
+         else
+         {
+         	return true;
+         }
+        if (email =="" ) 
+         {
+          document.getElementById("lb3").innerHTML="Enter your Email";
+         
+
+         }
+         else
+         {
+         	return true;
+         }
+         if (mobile =="" ) 
+         {
+          document.getElementById("lb4").innerHTML="Enter valid mobile number ";
+         
+
+         }
+         else
+         {
+         	return true;
+         }
+        if (password =="" ) 
+         {
+          document.getElementById("lb5").innerHTML="Enter your Password";
+         
+
+         }
+         else
+         {
+         	return true;
+         }
+         if (confirm =="" ) 
+         {
+          document.getElementById("lb6").innerHTML="Re_enter your Password";
+         
+          return false;
+         }
+         else
+         {
+         	return true;
+         }
+
+}
+    
+
+		
+	</script>
+	<style type="text/css">
+		#form{
+			background-color: #00ffff;
+			width: 600px;
+
+		}
+		#but{
+		margin-left: 100px;
+		}
+        label{
+            color: red;
+            width: 600px;
+        }
+        *{
+            margin-left: 10px;
+        }
+		
+	
+	</style>
+
+
+</head>
+<body>
+     <form action="" method="post" id="form" onsubmit= "return validate_form()">
+     	<table>
+     		<tr><th colspan="3">Student Registration form</th></tr>
+     		<tr>
+     			<td>Name</td>
+     			<td><input type="text" id="txt_name" name=""></td>
+     			<td><label id="lb1"></label></td>
+     		</tr>
+     		<tr>
+     			<td>Personal Address</td>
+     			<td><input type="text" id="txt_address" name=""></td>
+     			<td><label id="lb2"></label></td>
+
+     		</tr>
+            <tr>
+     			<td>Email Id</td>
+     			<td><input type="text" id="txt_email" name=""></td>
+     			<td><label id="lb3"></label></td>
+
+     		</tr>
+            <tr>
+     			<td>Mobile No</td>
+     			<td><input type="text" id="txt_mobile" name=""></td>
+     			<td><label id="lb4"></label></td>
+
+     		</tr>
+            <tr>
+     			<td>Password</td>
+     			<td><input type="Password" id="txt_pwd" name=""></td>
+     			<td><label id="lb5"></label></td>
+
+     		</tr>
+             <tr>
+     			<td>Confirm Password</td>
+     			<td><input type="Password" id="txt_cpwd" name=""></td>
+     			<td><label id="lb6"></label></td>
+
+     		</tr>
+     		<tr>
+     			<td colspan="3"><input type="submit" id="but" name="" value="Submit"></td>
+     		</tr>
+
+
+     	</table>
+     </form>
+</body>
+</html>

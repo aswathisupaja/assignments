@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>   
+	     <script type="text/javascript">
+	     	function write_message() {
+
+	     	var name=document.getElementById('txt_name');
+	     	var last_name=document.getElementById('txt_lname');
+	     	var email=document.getElementById('txt_email');
+	     	var pwd=document.getElementById('txt_pwd');
+
+	     	var message=document.getElementById('msg');
+
+	     	message.innerHTML="Welcome "+name.value+last_name.value+" My Email Id is "+email.value;
+
+	     		
+	     	}
+	     	
+	     </script>
+
+
+</head>
+<body>
+<form>
+   First Name: <input type="text" id="txt_name" name=""><br>
+   Last Nme: <input type="text" id="txt_lname" name=""><br>
+   Email: <input type="text" id="txt_email" name=""><br>
+   Password <input type="text" id="txt_pwd" name=""><br>
+
+   <input type="button"  value="SignUp" name="" onclick="write_message();"><br>
+
+   <p id="msg"></p>
+</form>
+</body>
+</html>

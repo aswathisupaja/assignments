@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>check box validation</title>
+	<script type="text/javascript">
+		function validate() {
+			var check1=document.getElementById('checkbox1').checked;
+			var check2=document.getElementById('checkbox2').checked;
+
+			if(check1 == false && check2 == false)
+			{
+				document.getElementById('lb').innerHTML="Please choose your Qualification";
+				return false;
+			}
+			
+			else
+			{
+				return true;
+			}
+			
+		}
+	</script>
+	<style type="text/css">
+		form{
+			background-color: #00ffff;
+			width: 600px;
+			height:200px;
+
+
+		}
+		#but{
+		margin-left: 300px;
+
+
+		}
+        label{
+            color: red;
+            width: 600px;
+        }
+        *{
+        	margin-top: 40px;
+            margin-left: 10px;
+        }
+        #first{
+        	padding: 10px;
+
+        }
+    </style>
+	
+</head>
+<body>
+
+<form>
+	<table>
+		<tr id="first">
+			<td>Qualification</td>
+			<td><input type="checkbox" name="checkbox1" id="checkbox1">Graduate<input type="checkbox" id="checkbox2" name="checkbox2">Post Graduate</td>
+    	</tr>
+    	<tr><td colspan="2"><label id="lb"></label></td></tr>
+        <tr>
+        	<td colspan="2"><input type="submit" name="" value="SUBMIT" align="center" onclick="return validate()"></td>
+        </tr>
+	</table>
+</form>
+
+
+</body>
+</html>
